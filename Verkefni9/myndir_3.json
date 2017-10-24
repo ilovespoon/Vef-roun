@@ -1,0 +1,15 @@
+{
+	"title" : "Batman vs Superman",
+	"release_year" : 2016,
+	"is_awesome" : true,
+	"won_oscar" : false,
+	"actors" : ["Ben affleck", "Gal gadot", "Stephen mayer"],
+	"budget" : null,
+	"credits" : {
+		"director" : "Zack Znyder",
+		"writer" : "Zack Znyder",
+		"composer" : "XL junkie",
+		"cinematographer" : "Moe gills"
+	}
+
+}
