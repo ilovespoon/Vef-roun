@@ -28,8 +28,5 @@ with connection.cursor() as cursor:
     cursor.execute("SELECT * FROM foo WHERE bar = %s AND baz = %s", (param1, param2)) #notaðu þetta þegar þu ert að signup notanda
     cursor.execute("INSERT INTO user VALUES ('%s', '%s')" , ("eh variable", "eh variable"))
 
-    # https://stackoverflow.com/questions/775296/python-mysql-parameterized-queries
-    # farðu inn i þetta til að uploada variables í sql
-
 
 connection.close()
