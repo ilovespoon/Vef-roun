@@ -9,8 +9,8 @@ connection = pymysql.connect(host='tsuts.tskoli.is', db='v10_vþ2', user='kennit
 
 with connection.cursor() as cursor:
 
-    cursor.execute("INSERT INTO user (user, pass) VALUES ('andri', '1234');") #ef þu ætlar að run-a eh sql þa verður það að vera inni i cursor.execute.
-    connection.commit() # ÞETTA ER MIKILVÆGT!!!!!!!!!!!!!!! eftir að hafa gert eh sql command
+    cursor.execute("INSERT INTO user (user, pass) VALUES ('andri', '1234');") 
+    connection.commit() 
     cursor.execute("INSERT INTO user VALUES ('palli', 'kaka')")
 
     cursor.execute("SELECT * FROM user")
@@ -25,7 +25,7 @@ with connection.cursor() as cursor:
 
     cursor.execute("SELECT * FROM user")
 
-    cursor.execute("SELECT * FROM foo WHERE bar = %s AND baz = %s", (param1, param2)) #notaðu þetta þegar þu ert að signup notanda
+    cursor.execute("SELECT * FROM foo WHERE bar = %s AND baz = %s", (param1, param2))
     cursor.execute("INSERT INTO user VALUES ('%s', '%s')" , ("eh variable", "eh variable"))
 
 
