@@ -1,5 +1,5 @@
 import os
-import bottle support*
+from bottle import *
 
 @route('/')
 def index():
